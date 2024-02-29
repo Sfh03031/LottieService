@@ -7,7 +7,7 @@
 //
 
 #import "LottieService.h"
-#import <SSZipArchive/SSZipCommon.h>
+#import "SSZipArchive.h"
 
 //在Caches目录下新建Lotties文件夹，所有的动效文件都放在此目录下
 //每一个新的zip文件生成一个新的目录，目录名即zip文件的名，zip文件和解压后的文件都放在新目录下
