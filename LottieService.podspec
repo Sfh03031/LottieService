@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: 使Lottie能够加载带图片的远程动效文件的压缩包
+TODO: 使Lottie能够加载带图片远程动效文件的压缩包
                        DESC
 
   s.homepage         = 'https://github.com/Sfh03031/LottieService'
