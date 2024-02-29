@@ -24,11 +24,11 @@ TODO: 使Lottie能够加载带图片的远程动效文件的压缩包
   s.homepage         = 'https://github.com/Sfh03031/LottieService'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Sfh03031' => 'sfhery@foxmail.com' }
+  s.author           = { 'Sfh03031' => 'sfh894645252@foxmail.com' }
   s.source           = { :git => 'https://github.com/Sfh03031/LottieService.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'LottieService/Classes/**/*'
   
