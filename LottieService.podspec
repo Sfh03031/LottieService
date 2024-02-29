@@ -36,7 +36,7 @@ TODO: 使Lottie能够加载带图片的远程动效文件的压缩包
   #   'LottieService' => ['LottieService/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'LottieService/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'lottie-ios', '2.5.3'
