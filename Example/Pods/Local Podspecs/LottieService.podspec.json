@@ -1,0 +1,31 @@
+{
+  "name": "LottieService",
+  "version": "0.1.0",
+  "summary": "A short description of LottieService.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Sfh03031/LottieService",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sfh03031": "sfhery@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Sfh03031/LottieService.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LottieService/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "lottie-ios": [
+      "2.5.3"
+    ],
+    "SSZipArchive": [
+
+    ]
+  }
+}

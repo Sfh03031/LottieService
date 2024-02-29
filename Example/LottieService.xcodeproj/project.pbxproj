@@ -41,11 +41,11 @@
 		607FACE51AFB9204008FA782 /* LottieService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottieService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		B242F3030B42A81F967870B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B242F3030B42A81F967870B4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BAD05B34C4CB84CE0E271DD5 /* Pods-LottieService_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieService_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LottieService_Tests/Pods-LottieService_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C50B84448636D4841F44EA80 /* Pods_LottieService_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LottieService_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB6182310725B8AD98F92A23 /* LottieService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LottieService.podspec; path = ../LottieService.podspec; sourceTree = "<group>"; };
-		D4E70F5E9C507CBA637DEA81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		CB6182310725B8AD98F92A23 /* LottieService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LottieService.podspec; path = ../LottieService.podspec; sourceTree = "<group>"; };
+		D4E70F5E9C507CBA637DEA81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E56B1742139EE8A61436FB05 /* Pods-LottieService_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LottieService_Example.debug.xcconfig"; path = "Target Support Files/Pods-LottieService_Example/Pods-LottieService_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				BAD05B34C4CB84CE0E271DD5 /* Pods-LottieService_Tests.debug.xcconfig */,
 				27F4FAEF9EC158B1CBD7F6E5 /* Pods-LottieService_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FNZ84EXWE9;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = FNZ84EXWE9;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -311,10 +313,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LottieService_Example/Pods-LottieService_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LottieService/LottieService.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LottieService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,7 +503,9 @@
 			baseConfigurationReference = E56B1742139EE8A61436FB05 /* Pods-LottieService_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				INFOPLIST_FILE = LottieService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -512,7 +520,9 @@
 			baseConfigurationReference = 1D43DC0ADB7B987EA4267CD2 /* Pods-LottieService_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				INFOPLIST_FILE = LottieService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -526,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BAD05B34C4CB84CE0E271DD5 /* Pods-LottieService_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 27F4FAEF9EC158B1CBD7F6E5 /* Pods-LottieService_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

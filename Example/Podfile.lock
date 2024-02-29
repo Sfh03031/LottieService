@@ -1,0 +1,35 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - lottie-ios (2.5.3)
+  - LottieService (0.1.0):
+    - lottie-ios (= 2.5.3)
+    - SSZipArchive
+  - SSZipArchive (2.4.3)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - LottieService (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+    - lottie-ios
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  LottieService:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  LottieService: 5ce7d4d463772ecdbf21819043ed091849b5a730
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+
+PODFILE CHECKSUM: 3542d6c645fd8e0953a462d2cb1bb62215dd6a1f
+
+COCOAPODS: 1.12.1
