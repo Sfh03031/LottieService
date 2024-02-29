@@ -503,6 +503,7 @@
 			baseConfigurationReference = E56B1742139EE8A61436FB05 /* Pods-LottieService_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				INFOPLIST_FILE = LottieService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -520,6 +521,7 @@
 			baseConfigurationReference = 1D43DC0ADB7B987EA4267CD2 /* Pods-LottieService_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				DEVELOPMENT_TEAM = FNZ84EXWE9;
 				INFOPLIST_FILE = LottieService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;

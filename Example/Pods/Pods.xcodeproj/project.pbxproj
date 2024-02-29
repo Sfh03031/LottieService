@@ -1493,6 +1493,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		089DAB8853AEDB7E9A0FA85261AF50EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC285C1DD8AB7E09C98E67D955DA766 /* LottieService.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LottieService/LottieService-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LottieService/LottieService-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LottieService/LottieService.modulemap";
+				PRODUCT_MODULE_NAME = LottieService;
+				PRODUCT_NAME = LottieService;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		0CF977E736A9F0297ED689DCD07C3E1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C687A1BF180E6AE323D683C33D9CB290 /* FBSnapshotTestCase.release.xcconfig */;
@@ -1774,37 +1806,6 @@
 			};
 			name = Debug;
 		};
-		995668A29B1E0B5AC83C477E70D66130 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15BF370922D5FFFF00671C3BEFA6B113 /* LottieService.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LottieService/LottieService-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LottieService/LottieService-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LottieService/LottieService.modulemap";
-				PRODUCT_MODULE_NAME = LottieService;
-				PRODUCT_NAME = LottieService;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		99F5CE077BCCAFE53A5B81170D72849F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3B692471F7EDAD78AD7CFB68C83C1BB /* Pods-LottieService_Tests.release.xcconfig */;
@@ -1868,9 +1869,9 @@
 			};
 			name = Debug;
 		};
-		BC4A39753D31EFE0C8F194B76653BFB1 /* Release */ = {
+		C299699110DFC21247FC447F94BEA662 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEC285C1DD8AB7E09C98E67D955DA766 /* LottieService.release.xcconfig */;
+			baseConfigurationReference = 15BF370922D5FFFF00671C3BEFA6B113 /* LottieService.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1884,7 +1885,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LottieService/LottieService-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LottieService/LottieService-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LottieService/LottieService.modulemap";
 				PRODUCT_MODULE_NAME = LottieService;
@@ -1894,11 +1895,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2041,8 +2041,8 @@
 		9C2FE76A329C898699781A4FC65D4148 /* Build configuration list for PBXNativeTarget "LottieService" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				995668A29B1E0B5AC83C477E70D66130 /* Debug */,
-				BC4A39753D31EFE0C8F194B76653BFB1 /* Release */,
+				C299699110DFC21247FC447F94BEA662 /* Debug */,
+				089DAB8853AEDB7E9A0FA85261AF50EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
